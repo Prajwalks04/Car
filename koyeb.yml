@@ -1,0 +1,11 @@
+name: CarPooling
+services:
+  - name: carpooling-service
+    ports:
+      - port: 3000
+    build:
+      type: docker
+      dockerfile: Dockerfile
+    instances:
+      - name: carpooling-instance
+        region: fra # Frankfurt region, change as needed
